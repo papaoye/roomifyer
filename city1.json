@@ -1,0 +1,73 @@
+{
+  "hotels": [
+    {
+      "hotel_id": "116836",
+      "name": "Brigade Hotel",
+      "rate_per_guest" : 499,
+      "Description": "Premium to economy range of rooms",
+      "address1": "Address 1",
+      "address2": "Address 2",
+      "address3": "Address 3",
+      "zip_code": 22344,
+      "email": "contact@hotel1.com",
+      "phone1": "300009717",
+      "phone2": "300009717",
+      "locations": [
+        "Brigade Road",
+        "MG Road"
+      ],
+      "best_for": [
+        "Near Railways",
+        "Foreign Travellers",
+        "Best for Couples"
+      ],
+      "room_types": [
+        "Standard",
+        "Premium",
+        "Elite"
+      ],
+      "lowest_price": 999,
+      "highest_price": 2999,
+      "nearby_places": [
+        {
+          "name": "Palace",
+          "distance": 8,
+          "unit": "kms"
+        },
+        {
+          "name": "Majestic",
+          "distance": 8,
+          "unit": "kms"
+        }
+      ],
+      "nearby_restaurants": [
+        {
+          "name": "Pizza Hut",
+          "distance": 8,
+          "unit": "kms"
+        }
+      ],
+      "shopping": [
+        {
+          "name": "City Market",
+          "distance": 8,
+          "unit": "kms"
+        }
+      ],
+      "amenities": [
+        {
+          "name": "Swimming Pool",
+          "available": "yes"
+        }
+      ],
+      "checkin_hour": "12PM",
+      "checkout_hour": "12PM",
+      "photos": [
+        {
+          "url": "brigade/entrance.jpeg",
+          "description": "Our hospitality is the best"
+        }
+      ]
+    }
+  ]
+}
