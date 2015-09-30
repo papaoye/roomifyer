@@ -1,0 +1,14 @@
+{
+  "name": "Roomifyer",
+  "version": "0.0.1",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.13.0",
+    "angular-sanitize" : "1.3.16"
+  }
+}
