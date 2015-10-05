@@ -1,0 +1,14 @@
+{
+  "name": "jsel",
+  "homepage": "https://github.com/jindw/jsel",
+  "_release": "ae7b95e925",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ae7b95e92566dc3897d834d6bd998ac58146280f"
+  },
+  "_source": "git://github.com/jindw/jsel.git",
+  "_target": "*",
+  "_originalSource": "jsel",
+  "_direct": true
+}

@@ -2601,3 +2601,8 @@ margin-top: 3px;
 height: 89px;
 }
 }
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}

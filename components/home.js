@@ -2,28 +2,28 @@
  * 
  */
 
-angular.module('RoomifyerApp', ['ngSanitize']).controller('HomeController', function($http, $q, $log, $scope) {
-	
-	$log.info("Starting home module...");
-	
-	var homeModel = this;
-    homeModel.userName = "TestUser";
-	homeModel.servicesSection = "";
-	homeModel.portfolioSecion = "";
-	
-	$http.get('/fragments/services.html')
-    .success(function (data) {
-    	homeModel.servicesSection = data;
-    }).error(function (msg, code) {
-        $log.error(msg, code);
+angular.module('RoomifyerApp', ['ngSanitize', 'times.tabletop', 'ui.bootstrap']).config(function(TabletopProvider){
+    TabletopProvider.setTabletopOptions({
+      key: 'https://docs.google.com/spreadsheets/d/1QpyBkyM6tvoGOyD-9IPW030jEqfu7rONuEVGuUGCsFM/pubhtml',
+      simpleSheet: true
     });
-	
-//	$http.get('/fragments/portfolio.html')
-//    .success(function (data) {
-//    	homeModel.portfolioSecion = data;
-//    }).error(function (msg, code) {
-//        $log.error(msg, code);
-//    });
-	
-	
-});
+  })
+  .controller('HomeController', function($scope, Tabletop){
+    
+    var homeModel = this;
+    homeModel.userName = "Customer";
+    
+    Tabletop.then(function(ttdata){
+        //alert(JSON.stringify(ttdata[1)));
+        var dom = jsel(ttdata[0]);
+        
+//        dom.map({
+//            'city': 'stub'
+//        });
+        
+        //alert(JSON.stringify(dom));
+        
+        var data = ttdata[0];
+        //alert(JSON.stringify(data[0]));
+    });
+  });
