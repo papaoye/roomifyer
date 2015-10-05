@@ -11,7 +11,7 @@ angular.module('RoomifyerApp', ['ngSanitize', 'times.tabletop', 'ui.bootstrap'])
   .controller('HomeController', function($scope, Tabletop){
     
     var homeModel = this;
-    homeModel.userName = "Customer";
+    homeModel.userName = "Traveller";
     
     Tabletop.then(function(ttdata){
         //alert(JSON.stringify(ttdata[1)));
