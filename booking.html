@@ -27,7 +27,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/jquery-ui.js"></script>
 <script>
       $(function() {
-        $( "#datepicker,#datepicker1" ).datepicker();
+        $( "#datepicker,#datepicker1" ).datepicker({
+              language: 'en',
+              pick12HourFormat: true
+            });
       });
 </script>
     
@@ -46,9 +49,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 <div class="top-menu">
 			     <ul>
 					 <li><a href="index.html">START</a></li>
+<!--
 					 <li><a href="facilities.html">FACILITIES</a></li>
 					 <li><a href="restaurant.html">RESTAURANT</a></li>
 					 <li><a href="conference.html">CONFERENCE</a></li>
+-->
 					 <li class="active"><a href="booking.html">BOOKING</a></li>
 					 <li><a  href="contact.html">CONTACT US</a></li>
 						<div class="clearfix"></div>
@@ -78,7 +83,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                      <h5>TIME</h5>
                      <input type="text" value="" class="time">
                      <h5>CHECK IN</h5>
-                     <input class="date" id="datepicker" type="text" value="2/08/2013" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '2/08/2013';}">
+                     <input class="date" data-format="dd/MM/yyyy hh:mm:ss" id="datepicker" type="text" value="2/08/2013" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '2/08/2013';}">
 
 
                      <h5>CHECK OUT</h5>
